@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="js/limpar.js"></script>
+        <script src="js/escolhas.js"></script>
+        <script src="js/resultado.js"></script>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/estilo.css">
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+
+        <section class="game">
+            <!-- title -->
+            <div class="titulo">Rock, Paper, Scissors</div>
+
+            <!-- Player score display -->
+            <div class="pontuacao">
+                <div class="pontuacaoJogador">
+                    <h2>You played: </h2>
+                    <span id="mostrarJogador" class="jContador"></span>
+                    <p>player points</p>
+                    <span id="j-contador" class="jContador">0</span>
+                </div>
+                
+                <!-- computer score display -->
+                <div class="pontuacaoComputador">
+                    <h2>PC played: </h2>
+                    <span id="mostrarInimigo" class="jContador"></span>
+                    <p>computer points</p>
+                    <span id="c-contador" class="cContador">0</span>
+                </div>
+            </div>
+            
+            <!-- number of moves -->
+            <div id="moveEsquerda" class="moveEsquerda">remaining moves: <span id="turnos">10</span></div>
+            
+            <!-- choice text -->
+            <div class="move">Choose your weapon: </div>
+            
+            <!-- New game text (only appears when numJogadas = 0) -->
+            <div class="novaPartida"><span id="novaPartida"></span></div>
+            
+            <!-- Play Options: Rock Paper Scissors -->
+            <div class="opcoes" id="escolhaDeleta">
+              
+                <!-- Option: Rock -->
+                <button type="text" class="escolha" id="escolha" value="1"><p class="textoBtn">Rock</p><img src="imagens/Rock.png" class="rockImg" onclick="limpar(); escolhaPedra(); calculoResultado();"></button>
+                
+                <!-- Option: Paper -->
+                <button type="text" class="escolha" id="escolha" value="2"><p class="textoBtn">Paper</p><img src="imagens/Paper.png" class="paperImg" onclick="limpar(); escolhaPapel(); calculoResultado();"></button>
+                
+                <!-- Option: Scissors -->
+                <button type="text" class="escolha" id="escolha" value="3"><p class="textoBtn">Scissors</p><img src="imagens/Scissors.png" class="scissorsImg" onclick="limpar(); escolhaTesoura(); calculoResultado();" ></button>
+            </div>
+            
+            <!-- Reload option (only appears when numJogadas = 0) -->
+            <div class="opcoes"><span id="opcoesReload"></span></div>
+            
+            <!-- match result display -->
+            <div class="textoResultado"><span id="game-result" class="textoResultado"></span></div>
+        </section>
+    </body>
+</html>
