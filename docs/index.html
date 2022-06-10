@@ -13,7 +13,7 @@
     </head>
     <body>
 
-        <section class="game">
+        <section class="game" style="font-family: Courier New;">
             <!-- titulo -->
             <div class="titulo">Rock, Paper, Scissors</div>
 
@@ -25,7 +25,10 @@
                     <p>Pontos jogador</p>
                     <span id="j-contador" class="jContador">0</span>
                 </div>
-                
+
+                <!-- Texto de resultado -->
+                <div class="textoResultado"><p style="font-size: 80px;" id="game-result" class="textoResultado"></p></div>
+
                 <!-- Mostrador de pontuação do computador -->
                 <div class="pontuacaoComputador">
                     <h2>PC jogou: </h2>
@@ -39,14 +42,14 @@
             <div id="moveEsquerda" class="moveEsquerda">Turnos restantes: <span id="turnos">10</span></div>
             
             <!-- texto de escolha -->
-            <div class="move">Escolha a sua arma: </div>
+            <div class="move" id="moveDeleta">Escolha a sua jogada: </div>
             
             <!-- Texto de nova partida (somente quando jogadas estiverem esgotadas) -->
             <div class="novaPartida"><span id="novaPartida"></span></div>
             
             <!-- Opções de jogadas: Pedra Papel Tesoura -->
             <div class="opcoes" id="escolhaDeleta">
-              
+
                 <!-- Opção: Pedra -->
                 <button type="text" class="escolha" id="escolha" value="1"><p class="textoBtn">Pedra</p><img src="imagens/Rock.png" class="rockImg" onclick="limpar(); escolhaPedra(); calculoResultado();"></button>
                 
@@ -59,9 +62,6 @@
             
             <!-- Opção de reload (somente quando jogadas estiverem esgotadas) -->
             <div class="opcoes"><span id="opcoesReload"></span></div>
-            
-            <!-- Mostrador de resultado de partida -->
-            <div class="textoResultado"><span id="game-result" class="textoResultado"></span></div>
         </section>
     </body>
 </html>
