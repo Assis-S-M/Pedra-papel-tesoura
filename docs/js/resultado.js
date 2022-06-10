@@ -42,6 +42,8 @@ function calculoResultado(){
     document.getElementById('novaPartida').innerHTML = "Clique no botão reload para uma nova partida";
 
     //deletador de botões de opção
+    document.getElementById('moveEsquerda').innerHTML = "";
+    document.getElementById('moveDeleta').innerHTML = "";
     document.getElementById('escolhaDeleta').innerHTML = "";
 
     //Criador de botão de reload

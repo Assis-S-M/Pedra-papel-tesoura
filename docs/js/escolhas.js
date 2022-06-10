@@ -27,7 +27,7 @@ function escolhaPedra() {
         } //Resultado caso a opção do computador seja tesoura
         else if (resultado == 3) {
             document.getElementById('mostrarInimigo').innerHTML = "<img src='imagens/Scissors.png'>";
-            document.getElementById('game-result').innerHTML = "Vitoria";
+            document.getElementById('game-result').innerHTML = "Vítoria";
         } else {}
     }
 }
@@ -47,7 +47,7 @@ function escolhaPapel() {
         //Resultado caso a opção do computador seja pedra
         if (resultado == 1) {
             document.getElementById('mostrarInimigo').innerHTML = "<img src='imagens/Rock.png'>";
-            document.getElementById('game-result').innerHTML = "Vitoria";
+            document.getElementById('game-result').innerHTML = "Vítoria";
 
         } //Resultado caso a opção do computador seja papel
         else if (resultado == 2) {
@@ -82,7 +82,7 @@ function escolhaTesoura() {
         } //Resultado caso a opção seja papel
         else if (resultado == 2) {
             document.getElementById('mostrarInimigo').innerHTML = "<img src='imagens/Paper.png'>";
-            document.getElementById('game-result').innerHTML = "Vitoria";
+            document.getElementById('game-result').innerHTML = "Vítoria";
             
         } //Resultado caso opção seja tesoura
         else if (resultado == 3) {
