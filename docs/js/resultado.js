@@ -5,7 +5,7 @@ function calculoResultado(){
   let resultAnalise = document.getElementById('game-result').innerText;
 
   //Condição de vitoria do jogador
-  if (resultAnalise == "Vitoria") {
+  if (resultAnalise == "Vitória") {
     pontosJogador++;
     document.getElementById('j-contador').innerHTML = pontosJogador;
     
@@ -42,8 +42,6 @@ function calculoResultado(){
     document.getElementById('novaPartida').innerHTML = "Clique no botão reload para uma nova partida";
 
     //deletador de botões de opção
-    document.getElementById('moveEsquerda').innerHTML = "";
-    document.getElementById('moveDeleta').innerHTML = "";
     document.getElementById('escolhaDeleta').innerHTML = "";
 
     //Criador de botão de reload
