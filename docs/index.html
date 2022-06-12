@@ -1,9 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <script src="js/limpar.js"></script>
-        <script src="js/escolhas.js"></script>
-        <script src="js/resultado.js"></script>
+        <script src="js/jogo.js"></script>
         
         <meta charset="utf-8">
         <meta http-equiv="X-UA-">
@@ -21,7 +19,7 @@
             <div class="pontuacao">
                 <div class="pontuacaoJogador">
                     <h2>Você jogou: </h2>
-                    <span id="mostrarJogador" class="jContador"></span>
+                    <span id="mostrarJogador" class="jContador"><img id="imgPlayer" src=""></span>
                     <p>Pontos jogador</p>
                     <span id="j-contador" class="jContador">0</span>
                 </div>
@@ -32,7 +30,7 @@
                 <!-- Mostrador de pontuação do computador -->
                 <div class="pontuacaoComputador">
                     <h2>PC jogou: </h2>
-                    <span id="mostrarInimigo" class="jContador"></span>
+                    <span id="mostrarInimigo" class="jContador"><img id="imgEnemy" src=""></span>
                     <p>Pontos computador</p>
                     <span id="c-contador" class="cContador">0</span>
                 </div>
@@ -51,17 +49,14 @@
             <div class="opcoes" id="escolhaDeleta">
 
                 <!-- Opção: Pedra -->
-                <button type="text" class="escolha" id="escolha" value="1"><p class="textoBtn">Pedra</p><img src="imagens/Rock.png" class="rockImg" onclick="limpar(); escolhaPedra(); calculoResultado();"></button>
+                <button type="text" class="escolha" id="Pedra"><p class="textoBtn">Pedra</p><img src="imagens/Rock.png" class="rockImg"></button>
                 
                 <!-- Opção: Papel -->
-                <button type="text" class="escolha" id="escolha" value="2"><p class="textoBtn">Papel</p><img src="imagens/Paper.png" class="paperImg" onclick="limpar(); escolhaPapel(); calculoResultado();"></button>
+                <button type="text" class="escolha" id="Papel"><p class="textoBtn">Papel</p><img src="imagens/Paper.png" class="paperImg"></button>
                 
                 <!-- Opção: Tesoura -->
-                <button type="text" class="escolha" id="escolha" value="3"><p class="textoBtn">Tesoura</p><img src="imagens/Scissors.png" class="scissorsImg" onclick="limpar(); escolhaTesoura(); calculoResultado();" ></button>
+                <button type="text" class="escolha" id="Tesoura"><p class="textoBtn">Tesoura</p><img src="imagens/Scissors.png" class="scissorsImg" ></button>
             </div>
-            
-            <!-- Opção de reload (somente quando jogadas estiverem esgotadas) -->
-            <div class="opcoes"><span id="opcoesReload"></span></div>
         </section>
     </body>
 </html>
