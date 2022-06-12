@@ -1,6 +1,4 @@
-window.onload = function () {
-
-//Pbtendo variaveis do HTML
+//Obtendo variaveis do HTML
 const Pedra = document.querySelector('#Pedra')
 const Papel = document.querySelector('#Papel')
 const Tesoura = document.querySelector('#Tesoura')
@@ -32,7 +30,7 @@ function alerta() {
   if (Turnos == 0) {
   MoveDeleta.innerHTML = "";
   NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer opção para uma nova partida</p>"
-  } else {}
+  }
 }
 
 //Função de resultado final
@@ -152,4 +150,3 @@ Tesoura.addEventListener("click", () => {
     window.location.reload();
   }
 })
-}
