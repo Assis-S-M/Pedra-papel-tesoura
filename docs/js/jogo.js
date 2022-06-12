@@ -11,6 +11,9 @@ let PontosInimigo = document.querySelector('#c-contador')
 let Resultado = document.querySelector('#game-result')
 let turnosRestantes = document.querySelector('#turnos')
 let NovaPartida = document.querySelector('#novaPartida')
+let MoveDeleta = document.querySelector('#moveDeleta')
+let PontosPlayerDeleta = document.querySelector('#pontosPlayerDeleta')
+let PontosEnemyDeleta = document.querySelector('#pontosEnemyDeleta')
 
 //Variaveis para cálculo
 let PlayerPoints = 0;
@@ -27,9 +30,25 @@ function atualizarInfo() {
 //Função de alerta e de nova partida
 function alerta() {
   if (Turnos == 0) {
-  document.getElementById('moveDeleta').innerHTML = "";
-  novaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer opção para uma nova partida</p>"
+  MoveDeleta.innerHTML = "";
+  NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer opção para uma nova partida</p>"
   } else {}
+}
+
+//Função de resultado final
+function resultadoFinal() {
+  if (Turnos == 0) {
+   PontosPlayerDeleta.innerHTML = "";
+   PontosEnemyDeleta.innerHTML = "";
+   
+   if (PlayerPoints > EnemyPoints) {
+     Resultado.innerHTML = `Você venceu por: <br>${PlayerPoints} a ${EnemyPoints}`;
+   } else if (PlayerPoints < EnemyPoints) {
+     Resultado.innerHTML = `Você perdeu por: <br>${EnemyPoints} a ${PlayerPoints}`;
+   } else {
+     Resultado.innerHTML = `Você empatou por: <br>${EnemyPoints} a ${PlayerPoints}`;
+   }
+  }
 }
 
 //Evento de click da opção Pedra
@@ -56,10 +75,11 @@ Pedra.addEventListener("click", () => {
     PlayerPoints++;
   }
   
-  //Diminuição de turnos e funções de atualizamento de informações e alerta de nova partida
+  //Diminuição de turnos e funções de atualizamento de informações,  alerta de nova partida e resultado final
   Turnos--;
   atualizarInfo();
   alerta();
+  resultadoFinal();
   } else {
     window.location.reload();
   }
@@ -89,10 +109,11 @@ Papel.addEventListener("click", () => {
     EnemyPoints++;
   }
   
-  //Diminuição de turnos e funções de atualizamento de informações e alerta de nova partida
+  //Diminuição de turnos e funções de atualizamento de informações, alerta de nova partida e resultado final
   Turnos--;
   atualizarInfo();
   alerta();
+  resultadoFinal();
   } else {
     window.location.reload();
   }
@@ -122,10 +143,11 @@ Tesoura.addEventListener("click", () => {
     Resultado.innerHTML = "Empate";
   }
   
-  //Diminuição de turnos e funções de atualizamento de informações e alerta de nova partida
+  //Diminuição de turnos e funções de atualizamento de informações, alerta de nova partida e resultado final
   Turnos--;
   atualizarInfo();
   alerta();
+  resultadoFinal();
   } else {
     window.location.reload();
   }
