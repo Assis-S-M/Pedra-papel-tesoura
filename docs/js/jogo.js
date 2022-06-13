@@ -40,11 +40,11 @@ function resultadoFinal() {
    PontosEnemyDeleta.innerHTML = "";
    
    if (PlayerPoints > EnemyPoints) {
-     Resultado.innerHTML = `Você venceu por: <br>${PlayerPoints} a ${EnemyPoints}`;
+     Resultado.innerHTML = `Você venceu por: <br>${PlayerPoints} – ${EnemyPoints}`;
    } else if (PlayerPoints < EnemyPoints) {
-     Resultado.innerHTML = `Você perdeu por: <br>${EnemyPoints} a ${PlayerPoints}`;
+     Resultado.innerHTML = `Você perdeu por: <br>${EnemyPoints} – ${PlayerPoints}`;
    } else {
-     Resultado.innerHTML = `Você empatou por: <br>${EnemyPoints} a ${PlayerPoints}`;
+     Resultado.innerHTML = `Você empatou por: <br>${EnemyPoints} – ${PlayerPoints}`;
    }
   }
 }
