@@ -37,7 +37,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    top: 120px;
+    top: 40px;
     z-index: 1;
     font-size: 2rem;
     font-weight: bold;
@@ -88,20 +88,110 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     text-shadow: 4px 4px 4px #0051ff;
 }
 
-/* pacote de estilos caso a resulução da tela seja menor que o esperado */
-@media screen and (max-width: 612px) {
-    .titulo {
-        text-align: center;
-    }
-    .pontuacao {
-        position: absolute;
-        top: 200px;
-        width: 100vw;
-    }
+/* Estilo dos textos apresentados */
+.textoResultado{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px #0051ff;
+}
 
-    .opcoes, .opcoesReload {
-        width: 100px;
-    }
+/* Estilo dos textos dos botões */
+.textoBtn {
+  font-size: 1rem;
+  font-weight: bold; 
+}
+
+/* VERSÃO PARA CELULARES */
+
+/* pacote de estilos caso a resulução da tela seja menor que o esperado */
+@media screen and (max-width: 800px) {
+    /* Estilo da sessão classe game */
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: rgb(27,42,173);
+background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%);
+}
+
+/* Estilo do titulo do jogo */
+.titulo {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    z-index: 2;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #0051ff;
+}
+
+/* Estilo da tabela de pontuação */
+.pontuacao {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #0051ff;
+}
+
+/* Estilo dos contadores de pontuação */
+.j-contador, .c-contador {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Estilo das opções: Pedra, Papel, Tesoura */
+.opcoes {
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+/* Estilo adicional das escolhas */
+.escolha {
+    padding: 0.3rem;
+    width: 60px;
+    height: 75px;
+    border: solid;
+    border-color: #bac5c8;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #0051ff;
+    background-color: rgb(27,42,173);
+}
+
+/* Estilo das escolhas quando selecionadas com o mouse */
+.escolha:hover {
+  border: solid;
+  border-color: white;
+  transform: scale(1.15);
+  transition: all 0.3s;
+}
+
+/* Estilo dos textos de movimentos, turnos, e de nova partida */
+.move, .moveEsquerda, .novaPartida {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #0051ff;
 }
 
 /* Estilo dos textos apresentados */
@@ -114,13 +204,19 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
   text-shadow: 4px 4px 4px #0051ff;
 }
 
 /* Estilo dos textos dos botões */
 .textoBtn {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: bold; 
+}
+
+img {
+    width: 40px;
+    height: 42px;
+}
 }
