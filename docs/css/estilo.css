@@ -129,7 +129,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 .titulo {
     position: absolute;
     top: 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
     z-index: 2;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
