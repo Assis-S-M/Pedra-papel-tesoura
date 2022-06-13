@@ -143,7 +143,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    top: 110px;
+    top: 80px;
     z-index: 1;
     font-size: 1rem;
     font-weight: bold;
