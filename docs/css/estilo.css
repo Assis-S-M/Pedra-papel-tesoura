@@ -107,7 +107,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   justify-content: space-around;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 3.5rem;
@@ -128,6 +128,14 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     width: 81px;
     height: 84px;
     animation: mudaCorFundo 2s infinite linear;
+}
+
+audio {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 190px;
+  height: 25px;
+  animation: mudaCorFundo 2s infinite linear;
 }
 
 /* VERSÃO PARA CELULARES */
@@ -235,7 +243,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   justify-content: space-around;
   position: relative;
   z-index: 1;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 2.2rem;
@@ -260,6 +268,14 @@ img {
     width: 40px;
     height: 42px;
     animation: mudaCorFundo 2s infinite linear;
+}
+
+audio {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 190px;
+  height: 25px;
+  animation: mudaCorFundo 2s infinite linear;
 }
 }
 
