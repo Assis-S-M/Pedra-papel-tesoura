@@ -20,7 +20,7 @@ let Turnos = 10;
 
 //Função para atualizar placares e turnos restantes
 function atualizarInfo() {
-  PontosJogador.innerHTML = `${PlayerPoints}`
+  PontosJogador.innerHTML = `${PlayerPoints}`;
   PontosInimigo.innerHTML = `${EnemyPoints}`;
   turnosRestantes.innerHTML = `${Turnos}`;
 }
@@ -29,7 +29,7 @@ function atualizarInfo() {
 function alerta() {
   if (Turnos == 0) {
   MoveDeleta.innerHTML = "";
-  NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer opção para uma nova partida</p>"
+  NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer<br>opção para uma nova partida</p>";
   }
 }
 
@@ -81,7 +81,7 @@ Pedra.addEventListener("click", () => {
   } else {
     window.location.reload();
   }
-})
+});
 
 //Evento de click da opção Papel
 Papel.addEventListener("click", () => {
@@ -115,7 +115,7 @@ Papel.addEventListener("click", () => {
   } else {
     window.location.reload();
   }
-})
+});
 
 //Evento de click da opção Tesoura
 Tesoura.addEventListener("click", () => {
@@ -149,4 +149,4 @@ Tesoura.addEventListener("click", () => {
   } else {
     window.location.reload();
   }
-})
+});
