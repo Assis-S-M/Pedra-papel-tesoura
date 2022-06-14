@@ -330,6 +330,7 @@ img {
     transform: rotate(-4deg);
   }
   75% {
+    border-color: rgb(63,49,236);
     transform: rotate(0deg);
   }
   100% {
