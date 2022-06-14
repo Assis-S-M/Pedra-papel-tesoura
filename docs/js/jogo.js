@@ -29,7 +29,7 @@ function atualizarInfo() {
 function alerta() {
   if (Turnos == 0) {
   MoveDeleta.innerHTML = "";
-  NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente em qualquer<br>opção para uma nova partida</p>";
+  NovaPartida.innerHTML = "<p style='text-align: center;'>Clique novamente<br>em qualquer opção<br> para uma nova partida</p>";
   }
 }
 
