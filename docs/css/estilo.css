@@ -11,8 +11,8 @@
 .game {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 105vh;
+    width: 105vw;
     justify-content: center;
     align-items: center;
     background: rgb(27,42,173);
@@ -42,7 +42,10 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
+    border: 2px solid black;
+    border-radius: 10px;
     animation: upDown 2s ease-out infinite;
+    animation: mudaCorFundo 2s infinite linear;
 }
 
 /* Estilo dos contadores de pontuação */
@@ -90,6 +93,13 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     text-shadow: 4px 4px 4px #0051ff;
 }
 
+.turnosNovo {
+  border: 3px solid black;
+  border-radius: 10px;
+  animation: upDown 2s ease-out infinite;
+  animation: mudaCorFundo 2s infinite linear;
+}
+
 /* Estilo dos textos apresentados */
 .textoResultado{
   display: flex;
@@ -111,6 +121,15 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   font-weight: bold; 
 }
 
+
+.imgResult {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 81px;
+    height: 84px;
+    animation: mudaCorFundo 2s infinite linear;
+}
+
 /* VERSÃO PARA CELULARES */
 
 /* pacote de estilos caso a resulução da tela seja menor que o esperado */
@@ -119,8 +138,8 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 .game {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 105vh;
+    width: 105vw;
     justify-content: center;
     align-items: center;
     background: rgb(27,42,173);
@@ -150,7 +169,10 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     font-size: 1rem;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
+    border: 2px solid black;
+    border-radius: 10px;
     animation: upDown 2s ease-out infinite;
+    animation: mudaCorFundo 2s infinite linear;
 }
 
 /* Estilo dos contadores de pontuação */
@@ -181,7 +203,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     cursor: pointer;
     box-shadow: 2px 2px 2px #0051ff;
     background-color: rgb(27,42,173);
-    animation: shake 1.3s infinite linear forwards;
+    animation: shake 2s infinite linear forwards;
 }
 
 /* Estilo das escolhas quando selecionadas com o mouse */
@@ -199,6 +221,13 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     text-shadow: 4px 4px 4px #0051ff;
 }
 
+.turnosNovo {
+  border: 3px solid black;
+  border-radius: 10px;
+  animation: upDown 2s ease-out infinite;
+  animation: mudaCorFundo 2s infinite linear;
+}
+
 /* Estilo dos textos apresentados */
 .textoResultado{
   display: flex;
@@ -209,7 +238,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-shadow: 4px 4px 4px #0051ff;
 }
@@ -223,6 +252,14 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 img {
     width: 40px;
     height: 42px;
+}
+
+.imgResult {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 40px;
+    height: 42px;
+    animation: mudaCorFundo 2s infinite linear;
 }
 }
 
@@ -261,5 +298,26 @@ img {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes mudaCorFundo {
+  0% {
+    border-color: rgb(236,49,49);
+    transform: rotate(4deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    border-color: rgb(33,238,25);
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    border-color: rgb(236,49,49);
+    transform: rotate(4deg);
   }
 }
