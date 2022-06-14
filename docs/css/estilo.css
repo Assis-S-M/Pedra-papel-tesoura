@@ -153,7 +153,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 .game {
     display: flex;
     flex-direction: column;
-    height: 105vh;
+    height: 110vh;
     width: 105vw;
     justify-content: center;
     align-items: center;
@@ -186,6 +186,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     text-shadow: 4px 4px 4px #0051ff;
     border: 3px solid black;
     border-radius: 10px;
+    margin: -20px;
     animation: upDown 2s ease-out infinite;
     animation: mudaCorFundo 2s infinite linear;
 }
