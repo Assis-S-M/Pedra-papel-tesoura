@@ -19,7 +19,7 @@
             <div class="pontuacao">
                 <div class="pontuacaoDeleta" id="pontosPlayerDeleta">
                     <h2>Você<br>jogou: </h2>
-                    <span id="mostrarJogador" class="jContador"><img id="imgPlayer" src="imagens/void.png"></span>
+                    <span id="mostrarJogador" class="jContador"><img id="imgPlayer" src="imagens/void.png" class="imgResult"></span>
                     <p>Pontos jogador</p>
                     <span id="j-contador" class="jContador">0</span>
                 </div>
@@ -30,20 +30,22 @@
                 <!-- Mostrador de pontuação do computador -->
                 <div class="pontuacaoDeleta" id="pontosEnemyDeleta">
                     <h2>PC<br>jogou: </h2>
-                    <span id="mostrarInimigo" class="jContador"><img id="imgEnemy" src="imagens/void.png"></span>
+                    <span id="mostrarInimigo" class="jContador"><img id="imgEnemy" src="imagens/void.png" class="imgResult"></span>
                     <p>Pontos computador</p>
                     <span id="c-contador" class="cContador">0</span>
                 </div>
             </div>
             
+            <div class="turnosNovo">
             <!-- numero de jogadas -->
-            <div id="moveEsquerda" class="moveEsquerda">Turnos restantes: <span id="turnos">10</span></div>
+            <div id="moveEsquerda" class="moveEsquerda"><p style="text-align: center;">Turnos restantes: <span id="turnos">10</span></p></div>
             
             <!-- texto de escolha -->
             <div class="move" id="moveDeleta">Escolha a sua jogada: </div>
             
             <!-- Texto de nova partida (somente quando jogadas estiverem esgotadas) -->
             <div class="novaPartida"><span id="novaPartida" class="moveEsquerda"></span></div>
+            </div>
             
             <!-- Opções de jogadas: Pedra Papel Tesoura -->
             <div class="opcoes" id="escolhaDeleta">
