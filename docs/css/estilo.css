@@ -130,7 +130,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     animation: mudaCorFundo 2s infinite linear;
 }
 
-audio {
+.audio {
   border: 2px solid black;
   border-radius: 30px;
   width: 190px;
@@ -270,7 +270,7 @@ img {
     animation: mudaCorFundo 2s infinite linear;
 }
 
-audio {
+.audio {
   border: 2px solid black;
   border-radius: 30px;
   width: 190px;
