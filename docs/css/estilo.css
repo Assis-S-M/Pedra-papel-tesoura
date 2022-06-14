@@ -11,8 +11,8 @@
 .game {
     display: flex;
     flex-direction: column;
-    height: 105vh;
-    width: 105vw;
+    height: 120vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     background: rgb(27,42,173);
@@ -32,7 +32,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 /* Estilo da tabela de pontuação */
 .pontuacao {
     display: flex;
-    width: 100vw;
+    width: 45vw;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -44,8 +44,12 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     text-shadow: 4px 4px 4px #0051ff;
     border: 3px solid black;
     border-radius: 10px;
-    animation: upDown 2s ease-out infinite;
+    margin: 65px;
     animation: mudaCorFundo 2s infinite linear;
+}
+
+.pontuacaoDeleta {
+  font-size: 16px;
 }
 
 /* Estilo dos contadores de pontuação */
@@ -88,7 +92,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
 
 /* Estilo dos textos de movimentos, turnos, e de nova partida */
 .move, .moveEsquerda, .novaPartida {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
 }
@@ -98,6 +102,8 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   border-radius: 10px;
   animation: upDown 2s ease-out infinite;
   animation: mudaCorFundo 2s infinite linear;
+  margin: 20px;
+  padding: 5px;
 }
 
 /* Estilo dos textos apresentados */
@@ -110,7 +116,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   margin-top: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   font-weight: bold;
   text-shadow: 4px 4px 4px #0051ff;
 }
@@ -136,6 +142,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
   width: 190px;
   height: 25px;
   animation: mudaCorFundo 2s infinite linear;
+  margin: 20px;
 }
 
 /* VERSÃO PARA CELULARES */
