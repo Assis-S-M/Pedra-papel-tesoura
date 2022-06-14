@@ -42,7 +42,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px;
     animation: upDown 2s ease-out infinite;
     animation: mudaCorFundo 2s infinite linear;
@@ -169,7 +169,7 @@ background: radial-gradient(circle, rgba(27,42,173,1) 40%, rgba(19,51,201,1) 78%
     font-size: 1rem;
     font-weight: bold;
     text-shadow: 4px 4px 4px #0051ff;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 10px;
     animation: upDown 2s ease-out infinite;
     animation: mudaCorFundo 2s infinite linear;
