@@ -5,8 +5,8 @@
 
 Feito utilizando conceitos basicos da programação como:
 
-* Lógica Basica
-* Váriaveis
+* Lógica Básica
+* Variáveis
 * Constantes
 * Funções
 * Estruturas condicionais
